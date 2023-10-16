@@ -1,12 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://l8x1dcan4ojy"]
+[gd_scene load_steps=3 format=3 uid="uid://l8x1dcan4ojy"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_totvw"]
-radius = 45.6508
+[ext_resource type="PackedScene" uid="uid://b0jbsah8o2sx4" path="res://scenes/character/character.tscn" id="1_0cif6"]
+[ext_resource type="PackedScene" uid="uid://s02fyimm4epr" path="res://scenes/obstacles/ball.tscn" id="2_xdgyy"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Character" type="Area2D" parent="."]
+[node name="Character" parent="." instance=ExtResource("1_0cif6")]
+position = Vector2(317, 168)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Character"]
-position = Vector2(500, 316)
-shape = SubResource("CircleShape2D_totvw")
+[node name="Ball" parent="." instance=ExtResource("2_xdgyy")]
+position = Vector2(197, 1193)
