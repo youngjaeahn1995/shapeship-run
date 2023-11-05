@@ -5,7 +5,6 @@ extends Area2D
 func _ready():
 	set_process_input(true)
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
@@ -17,4 +16,4 @@ func _input(event):
 
 
 func _on_body_entered(body):
-	print("Body Entered")
+	queue_free()

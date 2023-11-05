@@ -1,12 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://l8x1dcan4ojy"]
 
 [ext_resource type="PackedScene" uid="uid://b0jbsah8o2sx4" path="res://scenes/character/character.tscn" id="1_0cif6"]
-[ext_resource type="PackedScene" uid="uid://s02fyimm4epr" path="res://scenes/obstacles/ball.tscn" id="2_xdgyy"]
+[ext_resource type="PackedScene" uid="uid://d4atpmowy6p4v" path="res://scenes/obstacles/rain.tscn" id="3_svlss"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Character" parent="." instance=ExtResource("1_0cif6")]
 position = Vector2(317, 168)
 
-[node name="Ball" parent="." instance=ExtResource("2_xdgyy")]
-position = Vector2(197, 1193)
+[node name="rain" parent="." instance=ExtResource("3_svlss")]

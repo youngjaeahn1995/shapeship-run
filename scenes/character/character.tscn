@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0jbsah8o2sx4"]
 
-[ext_resource type="Script" path="res://Character.gd" id="1_w4578"]
+[ext_resource type="Script" path="res://scenes/character/Character.gd" id="1_sk4kp"]
 [ext_resource type="Texture2D" uid="uid://cr67ruq1tjh81" path="res://assets/character/shapeship1.png" id="2_2i72m"]
 
 [node name="Character" type="Area2D"]
 position = Vector2(50, 50)
-script = ExtResource("1_w4578")
+script = ExtResource("1_sk4kp")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 build_mode = 1
