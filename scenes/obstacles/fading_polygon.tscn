@@ -1,5 +1,10 @@
-[gd_scene format=3 uid="uid://rpjgushnmywh"]
+[gd_scene load_steps=2 format=3 uid="uid://rpjgushnmywh"]
+
+[ext_resource type="PackedScene" uid="uid://be0u5attgagen" path="res://scenes/obstacles/octogon.tscn" id="1_ymcvi"]
 
 [node name="fading_polygon" type="Node"]
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Octogon" parent="." instance=ExtResource("1_ymcvi")]
+position = Vector2(189, 155)

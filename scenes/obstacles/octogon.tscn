@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://bbvoo35f3631n" path="res://assets/obstacles/octogon.png" id="1_uihhc"]
 [ext_resource type="Script" path="res://scenes/obstacles/octogon.gd" id="1_uu83n"]
 
-[node name="Octogon" type="StaticBody2D"]
+[node name="Octogon" type="Area2D"]
 script = ExtResource("1_uu83n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.15, 0.15)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_uihhc")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-21, -21, 0, -29, 20, -21, 29, 0, 20, 21, 0, 29, -20, 21, -29, 0)
+polygon = PackedVector2Array(0, -97, 69, -68, 98, 0, 69, 68, 0, 97, -69, 69, -97, 1, -69, -69)

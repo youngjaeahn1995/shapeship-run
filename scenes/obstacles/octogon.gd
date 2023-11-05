@@ -1,19 +1,22 @@
-extends StaticBody2D
+extends Area2D
 
-var tween = get_tree().create_tween()
+var tween: Tween;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	start_tween()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if (!$CollisionPolygon2D.disabled && $Sprite2D.modulate.a < 0.95):
+		print("Disabled collision")
+		$CollisionPolygon2D.disabled = true
+	elif ($CollisionPolygon2D.disabled):
+		print("Enabled collision")
+		$CollisionPolygon2D.disabled = false
 
-func fade_in(duration):
-	tween.interpolate_property($Sprite2D, "modulate:a", modulate.a, 1, duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	tween.start()
-
-func fade_out(duration):
-	tween.interpolate_property($Sprite2D, "modulate:a", modulate.a, 0, duration, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-	tween.start()
+func start_tween():
+	tween = create_tween()
+	tween.set_loops()
+	tween.tween_property($Sprite2D, "modulate", Color(1, 1, 1, 1), 1)
+	tween.tween_property($Sprite2D, "modulate", Color(1, 1, 1, 0), 1)
