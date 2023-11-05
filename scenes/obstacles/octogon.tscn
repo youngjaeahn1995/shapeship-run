@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://be0u5attgagen"]
+
+[ext_resource type="Texture2D" uid="uid://bbvoo35f3631n" path="res://assets/obstacles/octogon.png" id="1_uihhc"]
+[ext_resource type="Script" path="res://scenes/obstacles/octogon.gd" id="1_uu83n"]
+
+[node name="Octogon" type="StaticBody2D"]
+script = ExtResource("1_uu83n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_uihhc")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-21, -21, 0, -29, 20, -21, 29, 0, 20, 21, 0, 29, -20, 21, -29, 0)

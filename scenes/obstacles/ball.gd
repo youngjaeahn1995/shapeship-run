@@ -5,9 +5,8 @@ var screen_size: Vector2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var ball_sprite = get_node("Sprite2D")
 	screen_size = get_viewport_rect().size
-	ball_height = ball_sprite.texture.get_height() * ball_sprite.scale.y
+	ball_height = $Sprite2D.texture.get_height() * $Sprite2D.scale.y
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):	

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://rpjgushnmywh"]
+
+[node name="fading_polygon" type="Node"]
+
+[node name="Timer" type="Timer" parent="."]
