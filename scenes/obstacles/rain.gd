@@ -1,7 +1,6 @@
 extends Node
 
 @export var instance_scene: PackedScene
-var instance_num: int = 20
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
