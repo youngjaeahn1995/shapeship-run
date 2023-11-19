@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://rpjgushnmywh"]
+
+[ext_resource type="Script" path="res://scenes/obstacles/fading_polygon/fading_polygon.gd" id="1_modnx"]
+[ext_resource type="PackedScene" uid="uid://be0u5attgagen" path="res://scenes/obstacles/fading_polygon/octogon.tscn" id="2_fepx0"]
+
+[node name="fading_polygon" type="Node"]
+script = ExtResource("1_modnx")
+instance_scene = ExtResource("2_fepx0")
+
+[node name="Timer" type="Timer" parent="."]

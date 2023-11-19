@@ -1,15 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://be0u5attgagen"]
 
-[ext_resource type="Texture2D" uid="uid://bbvoo35f3631n" path="res://assets/obstacles/octogon.png" id="1_uihhc"]
-[ext_resource type="Script" path="res://scenes/obstacles/octogon.gd" id="1_uu83n"]
+[ext_resource type="Script" path="res://scenes/obstacles/fading_polygon/octogon.gd" id="1_75leb"]
+[ext_resource type="Texture2D" uid="uid://bbvoo35f3631n" path="res://assets/obstacles/octogon.png" id="2_vfxc4"]
 
 [node name="Octogon" type="Area2D"]
-script = ExtResource("1_uu83n")
+script = ExtResource("1_75leb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_uihhc")
+texture = ExtResource("2_vfxc4")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, -97, 69, -68, 98, 0, 69, 68, 0, 97, -69, 69, -97, 1, -69, -69)
+disabled = true

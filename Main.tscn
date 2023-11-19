@@ -6,5 +6,6 @@
 [node name="Main" type="Node2D"]
 
 [node name="Character" parent="." instance=ExtResource("1_0cif6")]
+position = Vector2(381, 440)
 
 [node name="fading_polygon" parent="." instance=ExtResource("2_5w41c")]
