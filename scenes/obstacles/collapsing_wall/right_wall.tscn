@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://buwk8by831kd"]
+
+[ext_resource type="Script" path="res://scenes/obstacles/collapsing_wall/right_wall.gd" id="1_pobqh"]
+[ext_resource type="Texture2D" uid="uid://b86eqdo1vy7s7" path="res://assets/obstacles/square.png" id="2_ig4ky"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ynopj"]
+size = Vector2(20, 1280.25)
+
+[node name="RightWall" type="StaticBody2D"]
+script = ExtResource("1_pobqh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(700, 0)
+scale = Vector2(0.05, 3.2)
+texture = ExtResource("2_ig4ky")
+offset = Vector2(200, 200)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(710, 639.875)
+shape = SubResource("RectangleShape2D_ynopj")

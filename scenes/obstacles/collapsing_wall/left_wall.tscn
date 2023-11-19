@@ -1,21 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjijrj15bv1cf"]
+[gd_scene load_steps=4 format=3 uid="uid://bjijrj15bv1cf"]
 
 [ext_resource type="Script" path="res://scenes/obstacles/collapsing_wall/left_wall.gd" id="1_2qwxw"]
 [ext_resource type="Texture2D" uid="uid://b86eqdo1vy7s7" path="res://assets/obstacles/square.png" id="2_agv34"]
-[ext_resource type="Script" path="res://scenes/obstacles/collapsing_wall/CollisionShape2D.gd" id="3_d387s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynopj"]
-size = Vector2(100, 487)
+size = Vector2(20, 1288)
 
 [node name="LeftWall" type="StaticBody2D"]
 script = ExtResource("1_2qwxw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.25, 0.5)
+scale = Vector2(0.05, 3.2)
 texture = ExtResource("2_agv34")
 offset = Vector2(200, 200)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(50, 39.5)
+position = Vector2(10, 636)
 shape = SubResource("RectangleShape2D_ynopj")
-script = ExtResource("3_d387s")

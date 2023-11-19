@@ -1,3 +1,18 @@
-[gd_scene format=3 uid="uid://bkixrvhg2escx"]
+[gd_scene load_steps=6 format=3 uid="uid://bkixrvhg2escx"]
 
-[node name="collapsing_wall" type="Node"]
+[ext_resource type="PackedScene" uid="uid://b7knkssemv1yc" path="res://scenes/obstacles/collapsing_wall/top_wall.tscn" id="1_8ilv7"]
+[ext_resource type="Script" path="res://scenes/obstacles/collapsing_wall/collapsing_wall.gd" id="1_l2g7r"]
+[ext_resource type="PackedScene" uid="uid://buwk8by831kd" path="res://scenes/obstacles/collapsing_wall/right_wall.tscn" id="2_xmeec"]
+[ext_resource type="PackedScene" uid="uid://dlp3bervfwsey" path="res://scenes/obstacles/collapsing_wall/bottom_wall.tscn" id="3_1042i"]
+[ext_resource type="PackedScene" uid="uid://bjijrj15bv1cf" path="res://scenes/obstacles/collapsing_wall/left_wall.tscn" id="4_psoh1"]
+
+[node name="CollapsingWall" type="Node"]
+script = ExtResource("1_l2g7r")
+
+[node name="TopWall" parent="." instance=ExtResource("1_8ilv7")]
+
+[node name="RightWall" parent="." instance=ExtResource("2_xmeec")]
+
+[node name="BottomWall" parent="." instance=ExtResource("3_1042i")]
+
+[node name="LeftWall" parent="." instance=ExtResource("4_psoh1")]

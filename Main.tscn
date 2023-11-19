@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://l8x1dcan4ojy"]
 
 [ext_resource type="PackedScene" uid="uid://b0jbsah8o2sx4" path="res://scenes/character/character.tscn" id="1_0cif6"]
-[ext_resource type="PackedScene" uid="uid://rpjgushnmywh" path="res://scenes/obstacles/fading_polygon.tscn" id="2_5w41c"]
+[ext_resource type="PackedScene" uid="uid://rpjgushnmywh" path="res://scenes/obstacles/fading_polygon/fading_polygon.tscn" id="2_5w41c"]
 
 [node name="Main" type="Node2D"]
 

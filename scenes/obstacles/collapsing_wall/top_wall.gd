@@ -5,9 +5,9 @@ var collision: CollisionShape2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var screen_size_y = get_viewport().get_size().y
+	var screen_size_x = get_viewport().get_size().x
 	var collision = $CollisionShape2D
-	collision.position.y = screen_size_y / 2
+	collision.position.x = screen_size_x / 2
 	
 	sprite = $Sprite2D
 
